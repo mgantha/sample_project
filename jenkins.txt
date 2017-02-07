@@ -1,0 +1,83 @@
+1)create an instance in aws and select the ipadress.
+
+
+
+
+Installing Jenkins on Ubuntu
+.....................................
+
+
+https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
+
+
+follow the link and do the installation and upgerde stpes
+
+take the ipaddress from awsinstance and put in the url like ipaddress:port no (ex:50.23.233.122:8080) for this peurpose we have to add the port no in aws under instnce in security group..> launch-wizard-4
+in this add the portno and open the url
+
+in this jenkins admin password will be opened and copy the path to note the password
+
+
+
+
+
+Adding a maven project to the github and integrate using jenkins
+................................................................
+
+
+
+1.) open github and add the repository
+2.)clone the repository using gitbash on to the desktop
+3.)copy the maven project to the cloned repository and open the gitbash here
+4.) and add the project to the github by using following commands
+
+	git add projectname
+	git commit -m "some message"
+	git push origin master
+
+5.)and check the git hub repository it will reflect the project
+
+6.)open jenkins and add the job and build the job
+
+
+
+
+
+
+
+http://bhargavamin.com/how-to-do/setting-up-java-environment-variable-on-ec2/
+
+
+
+sudo apt-get install openjdk-7-jdk
+
+java path
+..........
+
+
+/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+
+
+open vi bashrc and add the(add the path upto jre dont include the bin path)
+
+export $JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre/"
+export $PATH=$PATH:$JAVA_HOME
+
+
+open  and (run this command)
+ . .bashrc
+
+
+
+
+chage the permissions fro users as chmod 777 -R .git/
+
+add the pom path properly
+
+
+
+
+
+
+
+https://github.com/psaana/psaana_project.git
